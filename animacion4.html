@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>ANIMACION 3 CSS</title>
+    <style>
+        *{                   /* esto hace que todos los objetos no tengan separacion */
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{background-color: rgb(106, 219, 185);}
+
+        .contenedor{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            position: relative;      /* para centrar el div */
+            margin: 0 auto;          /* para centrar el div */
+            background-color: black;
+
+            overflow: hidden;        /* muestra solo lo que haya dentro del contenedor  */
+        }
+
+        .cuadrito{
+            width: 100px;
+            height: 100px;
+            position: absolute;  /* para que se mueva el div dentro del contenedor */
+            top: 50px;
+            right: -500px;
+
+            animation: cuadrito 2s infinite linear;
+        }
+
+        @keyframes cuadrito {
+            from{left: -100px;}
+            to{left: 500px;}
+            
+        }
+
+        .cuadrito img{
+            width: 100px;
+            height: 100px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1><a href="index.html">volver</a></h1>
+    <div class="contenedor">
+
+        <div class="cuadrito">
+
+            <img src="img/megamanx.gif">
+
+        </div>
+
+    </div>
+
+</body>
+</html>
